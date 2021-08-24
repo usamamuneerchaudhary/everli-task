@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -19,7 +18,7 @@ class ConvertBinariesController extends Controller
             $binary = decbin($request->number);
             $binaryrev = strrev($binary);
             $reversednumber = bindec($binaryrev);
-        } catch (QueryException $exception) {
+        } catch (\Exception $exception) {
             return response()->json([
                 'error' => true,
                 'message' => $exception->getMessage()

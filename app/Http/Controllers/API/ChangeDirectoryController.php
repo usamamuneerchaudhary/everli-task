@@ -4,7 +4,6 @@ namespace App\Http\Controllers\API;
 
 use App\Helpers\Path;
 use App\Http\Controllers\Controller;
-use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -18,7 +17,7 @@ class ChangeDirectoryController extends Controller
     {
         try {
             $path = new Path('/a/b/c/d');
-        } catch (QueryException $exception) {
+        } catch (\Exception $exception) {
             return response()->json([
                 'error' => true,
                 'message' => $exception->getMessage()
