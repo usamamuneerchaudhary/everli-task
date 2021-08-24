@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "11057907-d068-4b71-abfa-7256fe014a3e",
+		"name": "Everli",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://everli-task.test/cd/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://everli-task.test/api/cd/?newPath=../x",
+					"protocol": "http",
+					"host": [
+						"everli-task",
+						"test"
+					],
+					"path": [
+						"api",
+						"cd",
+						""
+					],
+					"query": [
+						{
+							"key": "newPath",
+							"value": "../x"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://everli-task.test/binary",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://everli-task.test/api/binary?number=11",
+					"protocol": "http",
+					"host": [
+						"everli-task",
+						"test"
+					],
+					"path": [
+						"api",
+						"binary"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://everli-task.test/distance",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://everli-task.test/api/distance",
+					"protocol": "http",
+					"host": [
+						"everli-task",
+						"test"
+					],
+					"path": [
+						"api",
+						"distance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
